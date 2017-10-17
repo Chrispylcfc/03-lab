@@ -15,13 +15,15 @@
     declare all the variables using 'let'. These get a reference
     to the HTML elements we want by finding their ID
   */
-  let myName = document.getElementById("my-name"); 
+  let myName = document.getElementById("my-name");
+  let headerName = document.getElementById("header-name");
   let userName = document.getElementById("user-name"); 
   let getName = document.getElementById("get-name");
-  
+    
   // changes the 'innerHTML' (text) of the element
   function PerformGreeting() {
     myName.innerHTML = userName.value;
+    headerName.innerHTML = userName.value;
      /*
     Without setting the variables first, the above line would be really long:
       document.getElementById("my-name").innerHTML = document.getElementById("user-name").value;
